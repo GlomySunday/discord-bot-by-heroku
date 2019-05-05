@@ -5,7 +5,7 @@ from discord import Game
 from discord.ext.commands import Bot
 
 BOT_PREFIX = ("?", "!")
-TOKEN = "NDc4NjIyNTcxNjg0OTU0MTIy.DlNyYQ.JCk_gcFWSo59hB9QDqMlagkfVgc"
+
 
 client = Bot(command_prefix=BOT_PREFIX)
 @client.command(name = 'Vicc',
@@ -93,4 +93,4 @@ async def Hang():
         await client.say('$skip')'''
                         
 
-client.run(TOKEN)
+client.run(process.env.BOT_TOKEN)
